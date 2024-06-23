@@ -34,15 +34,27 @@ git clone https://github.com/your-username/your-repository.git
 3. Follow the prompts or edit the scripts to process your own images.
 
 ## Image Filters
-
 The following image filters are implemented in this project:
 
-- **Gaussian Blur:** Smooths the image using a Gaussian kernel.
-- **Edge Detection:** Detects edges in the image using Sobel or Canny edge detectors.
-- **Grayscale Conversion:** Converts a color image to grayscale.
-
-Each filter is implemented in its respective MATLAB script (`gaussian_blur.m`, `edge_detection.m`, `grayscale_conversion.m`). Detailed explanations and usage instructions are provided within each script file.
-
+Gaussian Blur: Smooths the image using a Gaussian kernel.
+Median Filter: Reduces noise in the image by replacing each pixel's value with the median value of the neighboring pixels.
+Bilateral Filter: Preserves edges while reducing noise by considering both spatial and intensity differences.
+Sobel Edge Detection: Detects edges in the image using the Sobel operator.
+Canny Edge Detection: Detects edges using the Canny edge detection algorithm.
+Prewitt Edge Detection: Detects edges using the Prewitt operator.
+Laplacian Filter: Detects edges by calculating the second derivative of the image.
+Unsharp Masking: Enhances edges by subtracting a blurred version of the image from the original image.
+Histogram Equalization: Improves contrast in the image by spreading out the intensity values.
+Adaptive Histogram Equalization (CLAHE): Improves contrast using a method that adapts to small regions in the image.
+Fourier Transform: Converts the image from the spatial domain to the frequency domain.
+Inverse Fourier Transform: Converts the image from the frequency domain back to the spatial domain.
+Grayscale Conversion: Converts a color image to grayscale.
+Thresholding: Converts the image to a binary image based on a threshold value.
+Morphological Operations: Performs operations such as dilation, erosion, opening, and closing on binary images.
+Gaussian Noise Addition: Adds Gaussian noise to the image.
+Salt and Pepper Noise Addition: Adds salt and pepper noise to the image.
+Speckle Noise Addition: Adds speckle noise to the image.
+Each filter is implemented in its respective MATLAB script with detailed explanations and usage instructions provided within each script file.
 ## Screenshots
 
 Include screenshots of the input images and the output images after applying each filter. These screenshots can help demonstrate the effectiveness of each filter. Insert them below:
